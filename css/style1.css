@@ -1,0 +1,439 @@
+:root{
+    --peach: #ffdab9;
+    --dark: #2f4f4f;
+    --cyan:#e0ffff;
+    --brown: #3e2723;
+    --green:#25d366;
+
+}
+*{
+    box-sizing: border-box;
+
+}
+html,body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+#nav-container{
+    background-color: var(--cyan);
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+.nav-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+
+}
+.nav-flex label, #humberger{
+    display: none;
+
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+nav ul li a{
+    display: block;
+    color: var(--dark);
+    padding: 0 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 60px ;
+}
+nav ul li a:hover{
+    background-color: salmon;
+    transition: all 0.3s;
+}
+.nav-brand h2{
+    text-transform: uppercase;
+    margin: 14px 0 0 14px;
+    color: var(--dark);
+}
+#hero-container{
+    background-image: url(../image/wallpapersden.com_cybersecurity-core_1927x1080.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-attachment: fixed;
+}
+.text{
+    text-align: center;
+    color: #e0ffff;
+    font-size: 20px;
+    
+
+}
+.button{
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    background-color:var(--green) ;
+    padding: 10px;
+    color: var(--cyan);
+    font-size: 16px;
+    border-radius: 10px;
+}
+.button:hover{
+    background-color: var(--dark);
+    color: var(--cyan);
+}
+main{
+    width: 80%;
+    margin: auto;
+}
+/* bagian about */
+#about h1{
+    color: var(--dark);
+    text-align: center;
+    margin-top: 80px;
+   
+}
+#about .about-deskripsi{
+    text-align: center;
+    color: var(--dark);
+}
+.about-flex{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 30px auto;
+}
+.about-image, .about-text{
+    width: 50%;
+    margin: 14px;
+}
+.about-image img{
+    width: 100%;
+    object-fit: cover;
+}
+#services h1{
+    color: var(--dark);
+    text-align: center;
+    margin-top: 80px;
+}
+#services .services-deskripsi {
+    color: var(--dark);
+    text-align: center;
+}
+#services .services-flex{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 30px auto;
+}
+.services-item{
+    width: 25%;
+    text-align: center;
+    padding: 20px 10px;
+    
+}
+.services-item .fas{
+    color: salmon;
+}
+
+/* catalog */
+#catalog h1{
+    color: var(--dark);
+    text-align: center;
+    margin-top: 80px;
+}
+#catalog .catalog-deskripsi{
+    text-align: center;
+    color: var(--dark);
+}
+.catalog-flex{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px auto;
+}
+.catalog-items{
+    width: 25%;
+    text-align: center;
+    padding:20px 10px ;
+}
+.catalog-items img{
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.catalog-items h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: var(--dark);
+
+}
+.catalog-items p{
+    font-size: 14px;
+    color: var(--dark);
+}
+.price-chat-container{
+    border-bottom:2px solid salmon ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    padding: 5px;
+}
+.price-harga span{
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--dark);
+}
+.chat-button button{
+    background-color: var(--green);
+    color: var(--cyan);
+    border: none;
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.chat-button button:hover{
+    background-color: var(--dark);
+}
+
+/* portfolio */
+#portfolio h1 {
+color: var(--dark);
+margin-top: 80px;
+text-align: center;
+}
+#portfolio .Deskripsi-portfolio {
+    text-align: center;
+    color: var(--dark);
+    
+}
+.portfolio-flex{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 30px auto;
+}
+.portfolio-flex .portfolio-items{
+    width: 25%;
+    padding: 5px;
+    overflow: hidden;
+    
+}
+.portfolio-items img{
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+.portfolio-items img:hover{
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+/* contact */
+#contact h1{
+    color: var(--dark);
+    margin-top: 80px;
+    text-align: center;
+}
+#contact .contact-deskripsi{
+    color: var(--dark);
+    text-align: center;
+}
+.contact-flex{
+    width: 100%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.map{
+    width: 60%;
+}
+.map h3{
+    text-align: center;
+    color: var(--dark);
+}
+.map iframe{
+    border-radius: 10px;
+}
+.sosialmedia{
+    width: 40%;
+    padding: 10px;
+}
+.sosialmedia h3{
+    text-align: center;
+    color: var(--dark);
+}
+.social-icon{
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    text-decoration: none;
+    background-color: var(--dark);
+    color: var(--cyan);
+    padding: 5px;
+    border-radius: 10px;
+}
+.facebook{
+    background-color: rgb(67, 67, 253);
+}
+.instagram{
+    background-color: rgb(248, 73, 73);
+}
+.tiktok{
+    background-color: rgb(59, 52, 52);
+}
+.twitter{
+    background-color: rgb(0, 162, 255);
+}
+.social-icon:hover{
+    opacity: 0.8;
+}
+/* footer */
+.footer-container{
+    margin-top: 60px;
+    color: var(--dark);
+    background-color: var(--cyan);
+    padding: 30px 5px;
+}
+.footer-container a{
+    text-decoration: none;
+    color: var(--dark);
+}
+.footer-container a:hover{
+    text-decoration: underline;
+}
+.footer-flex{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.footer-flex section{
+    width: 25%;
+    text-align: center;
+
+}
+.footer-flex section ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.footer-containerr h3{
+    margin-top: 0;
+}
+.footer-copyright{
+    width: 100%;
+    display: flex;
+    margin-top: 50px;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+.footer-copyright:hover{
+    text-decoration: none;
+}
+@media screen and (max-width:768px){
+    #nav-container .nav-flex label{
+        display: inline-block;
+        color: var(--dark);
+        font-style: normal;
+        font-size: 32px;
+        padding: 8px;
+    }
+    /* susun ulan menu menjadi vertikal */
+    #nav-container .nav-flex{
+        width: 100%;
+    }
+    nav ul{
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top:60px;
+        left: 0;
+    }
+    nav ul li a{
+        display: block;
+        color: var(--dark);
+        background-color: var(--cyan);
+        padding: 0 30px;
+        height: auto;
+    }
+    /* pindahkan posisi brand ke kanan */
+    .nav-brand h2{
+        position: absolute;
+        right: 10px;
+    }
+    /* untuk menampilakan atau menyembunykan menu */
+    #nav-container nav{
+        display: none;
+    }
+    /* menampilkan menu */
+    #nav-container .nav-flex input:checked ~ nav{
+        display: flex;
+    }
+    /* bagian about */
+    .about-flex{
+        flex-direction: column;
+    }
+    .about-image,.about-text{
+        width: 100%;
+    }
+    /* bagian services */
+    .services-item{
+        width: 50%;
+
+    }
+    /* bagian catalog */
+    .catalog-items{
+        width: 50%;
+    }
+    /* portfolio */
+    .portfolio-flex .portfolio-items{
+        width: 30%;
+        
+     }    
+     .contact-flex{
+        flex-direction: column;
+     }
+     .map,.sosialmedia{
+        width: 100%;
+     }
+     /* footer */
+     .footer-flex section{
+        width: 48%;
+     }
+
+}
+/* versi hp */
+@media screen and ( max-width:481px){
+    .services-item{
+        width: 100%;
+    }
+    /* bagian catalog */
+    .catalog-items{
+        width: 100%;
+    }
+    .portfolio-flex .portfolio-items{
+        width: 100%;
+       
+        
+    }
+    /* footer */
+    .footer-flex section{
+        width: 100%;
+        margin-top: 10px;
+     }
+}
